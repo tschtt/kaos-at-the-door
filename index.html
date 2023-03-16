@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaos at the door</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Kaos at the door</h1>
+  </header>
+  <main>
+    <form>
+      <div>
+        <label for="nombre" class="visually-hidden">Nombre</label>
+        <input id="nombre" name="nombre" type="text" class="input" autocomplete="off">
+      </div>
+    </form>
+    <ul class="list results"></ul>
+    <ul class="list">
+      <li><button id="comprobante">Mostró comprobante</button></li>
+      <li><button id="transferencia">Pagó en puerta (transferencia)</button></li>
+      <li><button id="efectivo">Pagó en puerta (efectivo)</button></li>
+    </ul>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>

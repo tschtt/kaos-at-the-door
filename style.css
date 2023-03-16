@@ -1,0 +1,123 @@
+/* ===== KAOS STYLES ===== */
+
+/* ----- RESET ----- */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+}
+
+label, input, button, textarea, select {
+  font: inherit;
+  display: block;
+  width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+ul, li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* ----- BASE ----- */
+
+:root {
+  --font-family: mono
+}
+
+body {
+  font-family: monospace;
+  font-size: 14px;
+}
+
+body > header {
+  padding: 1rem;
+  border-bottom: 2px solid black;
+}
+
+main {
+  padding: 1rem;
+  max-width: 80ch;
+  margin-inline: auto;
+}
+
+main > * + * {
+  margin-top: 1rem;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  padding: 0.25rem;
+  border-radius: 0;
+}
+
+form > * + * {
+  margin-top: .5rem;
+}
+
+/* ----- BLOCKS ----- */
+
+/* ----- input ----- */
+
+.input {
+  /* font-size: 18px; */
+  padding: 0.25rem;
+}
+
+/* ----- list ----- */
+
+.list {
+  border: 1px solid black;
+}
+
+.list button {
+  text-align: left;
+  border: none;
+}
+
+.list li + li button {
+  border-top: 1px solid black;
+}
+
+/* ----- UTILITIES ----- */
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
